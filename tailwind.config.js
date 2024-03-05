@@ -3,9 +3,9 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      xs: "475px",
-      sm: "720px",
-      md: "960px",
+      xs: "360px",
+      sm: "520px",
+      md: "760px",
       lg: "1200px",
     },
     fontFamily: {
@@ -14,6 +14,7 @@ export default {
     },
     extend: {
       spacing: {
+        120:"28rem",
         128: "32rem",
         144: "36rem",
       },
