@@ -4,7 +4,7 @@ const MovieCard = ({movie}) => {
   return (
     <div>
 
-            <div key={movie.imdbID} className='card' >
+            <div key={movie.imdbID} className='card ' >
       <div className='flex justify-center text-3xl text-slate-100'>
           <p>{movie.Year}</p>
        </div>

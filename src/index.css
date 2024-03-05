@@ -12,8 +12,8 @@ body {
   background-color: #212426;
 }
 .container{
-  @apply   grid gap-10 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 m-7;
+  @apply   grid gap-10 xs:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 m-7 xl:grid-cols-5;
 }
 .card{
-  @apply relative flex-1 border-2 rounded-xl h-80 xs:w-72 sm:w-64 md:w-56;
+  @apply relative flex-1 m-auto transition-all border-2 cursor-pointer not-sr-only rounded-xl h-80 sm:w-64 md:w-56 xs:w-64 bg-gradient-to-r from-red-800 hover:scale-110 ;
 }

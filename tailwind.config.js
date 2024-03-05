@@ -6,7 +6,8 @@ export default {
       xs: "360px",
       sm: "520px",
       md: "760px",
-      lg: "1200px",
+      lg: "980px",
+      xl:"1220px"
     },
     fontFamily: {
       sans: ["Graphik", "sans-serif"],

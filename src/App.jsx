@@ -29,17 +29,19 @@ searchMovies('Avengers');
     <>
 <div className='flex-wrap items-center justify-center'>
   
-  <h1 className='flex justify-center p-4 font-serif text-6xl font-bold text-transparent bg-gradient-to-r from-red-700 bg-clip-text xs:text-4xl sm:text-5xl lg:text-7xl md:text-6xl'>Movie App </h1>
+  <h1 className='flex justify-center p-4 font-serif text-6xl font-bold text-transparent bg-gradient-to-r from-red-600 bg-clip-text xs:text-4xl sm:text-5xl lg:text-7xl md:text-6xl'>
+    Movie App
+     </h1>
  
-  <div className='flex items-center justify-center p-2 search '>
+  <div className='flex items-center justify-center w-auto p-2 search'>
     
-    <input className='relative flex h-10 text-center bg-white rounded-full w-80 cursor-text lg:w-128'
+    <input className='relative flex h-10 text-xl text-center bg-white rounded-full w-80 cursor-text lg:w-128'
     value={search} 
     type='text'
     placeholder='Search For Movies'  
     onChange={(e)=> setSearch(e.target.value)} />
     
-   <img className='absolute pr-64 cursor-pointer group-hover:text-right lg:pr-120'  
+   <img className='absolute pr-64 cursor-pointer hover:text-right lg:pr-120'  
    src={Search}
    onClick={()=>searchMovies(search)}
    alt='search'/>
