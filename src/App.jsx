@@ -13,10 +13,9 @@ function App() {
   useEffect(()=>{ 
 searchMovies('Avengers');
 },[]);
-
+  const API_KEY='https://www.omdbapi.com/?i=tt3896198&apikey=f680daf5'
 
   const searchMovies=async(title)=>{
-  API_KEY='https://www.omdbapi.com/?i=tt3896198&apikey=f680daf5'
   const response=await fetch(`${API_KEY}&s=${title}`);
   const data=await response.json();
   setMovie(data.Search);
