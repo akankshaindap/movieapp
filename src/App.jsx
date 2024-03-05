@@ -2,11 +2,8 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import MovieCard from './MovieCard'
 import Search from './assets/search.svg'
+
 import './App.css'
-//f680daf5
-
-const apiKey=process.env.API_KEY;
-
 function App() {
   const[movie ,setMovie]=useState([]);
   
@@ -17,7 +14,7 @@ searchMovies('Avengers');
 },[]);
 
   const searchMovies=async(title)=>{
-  const response=await fetch(`${process.env.API_KEY}&s=${title}`);
+  const response=await fetch(`${import.meta.env.VITE_API_KEY}&s=${title}`);
   const data=await response.json();
   setMovie(data.Search);
   }
