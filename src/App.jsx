@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import MovieCard from './MovieCard'
 import Search from './assets/search.svg'
+import dotenv from 'dotenv'
 
 import './App.css'
 function App() {
@@ -13,12 +14,14 @@ function App() {
 searchMovies('Avengers');
 },[]);
 
+
   const searchMovies=async(title)=>{
-  const response=await fetch(`${import.meta.env.VITE_API_KEY}&s=${title}`);
+  API_KEY='https://www.omdbapi.com/?i=tt3896198&apikey=f680daf5'
+  const response=await fetch(`${API_KEY}&s=${title}`);
   const data=await response.json();
   setMovie(data.Search);
   }
-
+console.log(API_KEY);
 
 
 
