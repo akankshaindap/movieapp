@@ -27,11 +27,11 @@ searchMovies('Avengers');
 
   return (
     <>
-<div className='flex-col items-center justify-center app'>
+<div className='flex-wrap items-center justify-center'>
   
   <h1 className='flex justify-center p-4 font-serif text-6xl font-bold text-transparent bg-gradient-to-r from-red-700 bg-clip-text'>Movie App </h1>
  
-  <div className='flex items-center justify-center search'>
+  <div className='flex items-center justify-center p-2 search '>
     
     <input className='relative flex h-10 text-center bg-white rounded-full w-80 cursor-text '
     value={search} 
@@ -46,7 +46,7 @@ searchMovies('Avengers');
     </div>   
   {
     movie?.length > 0 ?(
-    <div className='container grid grid-flow-row gap-10 py-8 gridjustify-between sm:grid-cols-4 '>
+    <div className='container'>
       {movie.map((movie)=>(<MovieCard movie={movie}/>))}
  </div>
 
