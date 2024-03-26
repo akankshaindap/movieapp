@@ -31,7 +31,7 @@ console.log(API_KEY);
 
         <div className="flex items-center justify-center w-auto p-3 search ">
           <input
-            className="relative flex h-10 text-xl text-center bg-white rounded-full w-72 cursor-text lg:w-128   m-auto"
+            className="relative flex h-10 text-xl text-center bg-white rounded-full w-80 cursor-text lg:w-128   xs:-ml-4"
             value={search}
             type="text"
             placeholder="Search For Movies"
@@ -39,7 +39,7 @@ console.log(API_KEY);
           />
 
           <img
-            className="absolute -ml-56 lg:-ml-100"
+            className="absolute -ml-72 lg:-ml-120"
             src={Search}
             onClick={() => searchMovies(search)}
             alt="search"
